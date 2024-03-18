@@ -228,3 +228,21 @@ iframe{
 .fade-in-visible {
     opacity: 1;
 }
+.rainbow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(-45deg, #ff2400, #ff8c00, #ffd700, #008000, #0000ff, #4b0082, #8a2be2);
+    background-size: 300% 300%;
+    animation: rainbowAnimation 12s linear infinite;
+  }
+
+  @keyframes rainbowAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
